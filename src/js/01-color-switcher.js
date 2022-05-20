@@ -10,7 +10,7 @@ let timerId = null;
 
 startBtn.addEventListener('click', () => {
   timerId = setInterval(() => {
-    console.log((bodyEl.style.backgroundColor = getRandomHexColor()));
+    bodyEl.style.backgroundColor = getRandomHexColor();
   }, 1000);
   startBtn.setAttribute('disabled', 'disabled');
 });
